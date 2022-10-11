@@ -21,7 +21,7 @@ while True:
 	# r = s.get('https://www.avito.ru/')
 	# r = s.get('https://www.avito.ru/ekaterinburg/telefony?cd=1&d=1&f=ASgCAQECAUD2vA0UktI0AUXGmgwUeyJmcm9tIjowLCJ0byI6NzAwMH0&p=16&s=104&user=1')
 	r = s.get('https://www.avito.ru/volgogradskaya_oblast_volzhskiy/telefony/mobilnye_telefony/apple-ASgBAgICAkS0wA3OqzmwwQ2I_Dc?cd=1&s=104&user=1')
-	print(r.status_code)
+# 	print(r.status_code)
 	r.encoding = 'utf-8'
 	# f = open('if.html', 'w')
 	# f.write(r.text)
@@ -67,7 +67,7 @@ while True:
 
 
 	if DATA_ID != int(lastid):
-		print(TITLE, PRICE+'₽', 'https://www.avito.ru'+LINK, DATA_ID, sep='\n')
+# 		print(TITLE, PRICE+'₽', 'https://www.avito.ru'+LINK, DATA_ID, sep='\n')
 		bot.send_message(PUBLIC_ID, TITLE+'\n✅'+PRICE+'₽\nhttps://www.avito.ru'+LINK+'\n\nid'+str(DATA_ID))
 
 		f = open('lastid.txt', 'w')
